@@ -264,7 +264,9 @@ width: 100%;
 .desc-about {
 height: 350px;
 }
-
+.testemunho {
+border-top: 40px solid #38404a;
+}
 
 /*
 =============
