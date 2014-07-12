@@ -1,0 +1,327 @@
+
+/*
+  ========================================
+  CSS Reset
+  ========================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body{
+  font-family: 'helvetica';
+  font-weight: 100;
+}
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+	.container {
+	width: 1170px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+	width: 970px;
+	}
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grid,
+[class*="col-"]{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+[class*="col-"]{
+	display: block;
+	float: left;
+}
+
+.col-1 {
+	width: 8.33333333%;
+}
+
+
+.col-2 {
+	width: 16.66666667%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33333333%;
+}
+
+.col-5 {
+	width: 41.66666667%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33333333%;
+}
+
+.col-8 {
+	width: 66.66666667%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33333333%;
+}
+
+.col-11 {
+	width: 91.66666667%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.row-full-footer {
+width: 100%;
+position: absolute;
+bottom: 0;
+background: #293f50;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h2{
+  font-size: 30px;
+  color: #64887a;
+  font-family: 'helvetica neue';
+  font-weight: 100;
+}
+p{ 
+  color: #fff;
+}
+
+a {
+  color: #000;
+}
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.header-full {
+width: 100%;
+background: url(../images/bg-header.jpg);
+background-size: cover;
+height: 600px;
+}
+
+/* About */
+#about {
+background: #f2f2f2;
+min-height: 600px;
+}
+
+/*imagem do about*/
+.imagem-about {
+float: left;
+width: 100%;
+}
+.imagem-about img {
+width: 100%;
+}
+.desc-about {
+height: 350px;
+}
+
+
+/*
+=============
+	Styles
+=============
+*/
+
+.clearfix {
+	clear: both;
+}
+
+#header {
+	background: url(../images/bg-header.jpg);
+}	
+
+.topo {
+	margin: 0 auto;
+}
+
+.topo {
+	position: relative;
+	padding-top: 30px;
+}
+
+.logo {
+	width: 300px;
+	display: inline-block;
+	float: left;
+	font-family: 'Yellowtail', cursive;
+	font-size: 23px;
+	color: #fff;
+}
+
+nav {
+	float: right;
+	display: inline-block;
+	top: 20px;
+	position: relative;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+nav li a {
+	color: #fff;
+	font-family: 'Arial';
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav li:hover {
+	background: #ff4b5a;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
